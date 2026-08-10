@@ -1,0 +1,78 @@
+.guitar_info_section{
+    position: relative;
+    overflow: hidden;
+}
+
+.more_info{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 5em 8%;
+    z-index: 1;
+}
+.background_more{
+    background-color: #111111;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.first_more{
+    width: 80%;
+    padding: 5em 2em;
+    color: #B2B2B2;
+}
+
+.first_more h1{
+    color:aliceblue;
+}
+
+.more_img{
+    height: auto;
+    max-height: 45em;
+    border-radius: 5px;
+    width: auto;
+    max-width: 100%;
+}
+
+.link_for_more{
+    color: #FFBD00;
+    font-size: 1.5em;
+    font-weight: 700;
+    border-bottom: 3px solid #FFBD00;
+}
+
+@media (max-width: 1200px) {
+    .more_info {
+        margin: 4em 4%;
+    }
+
+    .first_more {
+        padding: 3em 1.5em;
+    }
+
+    .more_img {
+        max-height: 32em;
+    }
+}
+
+@media (max-width: 800px) {
+    .more_info {
+        flex-direction: column; 
+        align-items: center; 
+        margin: 0;
+        padding: 3em 5%;
+    }
+
+    .first_more {
+        width: 100%; 
+        padding: 1em;
+        text-align: center;
+    }
+
+    .more_img {
+        display: none;
+    }
+}

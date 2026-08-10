@@ -1,0 +1,148 @@
+.guitar_detail_page {
+    margin: 2em 6%;
+}
+
+.guitar_detail_page.not_found {
+    text-align: center;
+    padding: 4em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.back_link {
+    display: inline-block;
+    margin-bottom: 1.5em;
+    color: #555;
+    font-weight: 600;
+    transition: 0.2s;
+}
+.back_link:hover {
+    color: #F2A60C;
+}
+
+.guitar_detail_content {
+    display: flex;
+    align-items: flex-start;
+    gap: 3em;
+}
+
+.guitar_detail_image_wrap {
+    width: 40%;
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.guitar_detail_image_wrap img {
+    max-width: 100%;
+    height: auto;
+    max-height: 30em;
+    border-radius: 0.5em;
+}
+
+.guitar_detail_info {
+    width: 60%;
+}
+
+.guitar_detail_description {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.guitar_detail_specs h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.guitar_detail_specs h3 img {
+    width: 1.5em;
+}
+
+.guitar_detail_additional {
+    white-space: pre-line;
+    line-height: 1.6em;
+}
+
+.guitar_detail_genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin: 1.2em 0;
+}
+
+.genre_tag {
+    background-color: #f0f0f0;
+    color: #444;
+    padding: 0.3em 0.9em;
+    border-radius: 1em;
+    font-size: 0.9em;
+    text-transform: capitalize;
+}
+
+.guitar_detail_purchase {
+    margin-top: 2em;
+    padding-top: 1.5em;
+    border-top: 1px solid #e2e2e2;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+}
+
+.quantity_selector {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    background-color: #f0f0f0;
+    border-radius: 2em;
+    padding: 0.4em 0.9em;
+}
+
+.quantity_selector button {
+    border: none;
+    background: none;
+    font-size: 1.2em;
+    width: 1.6em;
+    height: 1.6em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.quantity_selector button:hover {
+    background-color: #F2A60C;
+    color: white;
+}
+
+.add_to_cart_btn {
+    margin-top: 0;
+    min-width: 10em;
+}
+
+@media (max-width: 1200px) {
+    .guitar_detail_page {
+        margin: 2em 4%;
+    }
+}
+
+@media (max-width: 800px) {
+    .guitar_detail_content {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .guitar_detail_image_wrap,
+    .guitar_detail_info {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .guitar_detail_purchase {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

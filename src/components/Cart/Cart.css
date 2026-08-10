@@ -1,0 +1,172 @@
+.cart_page {
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4em 1.5em;
+}
+
+.cart_page.cart_page_filled {
+    align-items: stretch;
+    text-align: left;
+    max-width: 60em;
+    margin: 0 auto;
+    padding: 3em 1.5em;
+}
+
+.cart_page h1 {
+    margin-bottom: 0.5em;
+}
+
+.cart_page_filled h1 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.cart_browse {
+    margin-top: 1.5em;
+    background-color: #F2A60C;
+    color: #111;
+    padding: 0.7em 1.8em;
+    border-radius: 0.5em;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.cart_browse:hover {
+    background-color: #fdc200;
+    color: #111;
+}
+
+.cart_items {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.cart_item {
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+    padding: 1em;
+    border: 1px solid #eaeaea;
+    border-radius: 0.75em;
+}
+
+.cart_item img {
+    width: 5em;
+    height: 5em;
+    object-fit: cover;
+    border-radius: 0.5em;
+    background-color: #111;
+}
+
+.cart_item_info {
+    flex: 1;
+    min-width: 8em;
+}
+
+.cart_item_info h3 {
+    font-size: 1.1em;
+}
+
+.cart_item_quantity {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+    background-color: #f0f0f0;
+    border-radius: 2em;
+    padding: 0.3em 0.7em;
+}
+
+.cart_item_quantity button {
+    border: none;
+    background: none;
+    font-size: 1.1em;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.cart_item_quantity button:hover {
+    background-color: #F2A60C;
+    color: white;
+}
+
+.cart_item_subtotal {
+    font-weight: 700;
+    min-width: 7em;
+    text-align: right;
+}
+
+.cart_item_remove {
+    border: none;
+    background: none;
+    color: #999;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.cart_item_remove:hover {
+    color: #d43f3f;
+}
+
+.cart_summary {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
+    border-top: 1px solid #eaeaea;
+    padding-top: 1.5em;
+}
+
+.cart_clear {
+    border: none;
+    background: none;
+    color: #999;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.cart_clear:hover {
+    color: #d43f3f;
+}
+
+.cart_total {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+}
+
+.cart_checkout {
+    border: none;
+    background-color: #F2A60C;
+    padding: 0.8em 2em;
+    font-weight: 700;
+    border-radius: 0.6em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cart_checkout:hover {
+    background-color: #fdc200;
+}
+
+@media (max-width: 800px) {
+    .cart_item {
+        flex-wrap: wrap;
+    }
+
+    .cart_item_subtotal {
+        text-align: left;
+    }
+
+    .cart_summary {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+}

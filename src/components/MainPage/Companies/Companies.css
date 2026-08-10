@@ -1,0 +1,51 @@
+
+.companies{
+    margin: 2em 6%;
+}
+
+.partners{
+    margin: 5em 0;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    gap: 2em;
+    align-items: center;
+}
+
+.company_logo img{
+    width: 10em;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1200px) {
+    .companies {
+        margin: 2em 4%;
+    }
+}
+
+@media (max-width: 800px) {
+    .companies {
+        margin: 2em 4%; 
+        text-align: center; 
+    }
+
+    .partners {
+        margin: 3em 0; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+
+    .company_logo {
+        width: 40%; 
+        margin-bottom: 1em; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .company_logo img {
+        width: 7em; 
+        height: auto;
+    }
+}

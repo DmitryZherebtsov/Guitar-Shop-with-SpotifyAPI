@@ -1,0 +1,39 @@
+.medias{
+    height: 3em;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.medias img{
+    margin: 0 0.5em;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 3px;
+    padding: 0.3em;
+    box-sizing: content-box;
+}
+.insta:hover{
+    background-color: orange;
+}
+.faceb:hover{
+    background-color: blue;
+}
+.yout:hover{
+    background-color: red;
+}
+  
+.rights_reserved_mobile{
+    display: none;
+}
+
+@media (max-width: 800px){
+    .footer_logo{
+        align-items: center;
+    }
+    .rights_reserved_mobile{
+        display: block;
+    }
+    .medias{
+        justify-content: center;
+    }
+}

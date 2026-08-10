@@ -1,0 +1,18 @@
+
+.information{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    color: #9C9C9C;
+    transition: 0.2s;
+    gap: 0.35em;
+}
+.information a:hover{
+    color: aliceblue;
+}
+
+@media (max-width: 800px) {
+    .information {
+        align-items: center;
+    }
+}

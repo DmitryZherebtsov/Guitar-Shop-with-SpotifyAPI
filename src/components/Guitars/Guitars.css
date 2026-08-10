@@ -1,0 +1,180 @@
+.guitars_page {
+    margin: 2em 6%;
+}
+
+.guitar_collection {
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.caption_guitars {
+    font-weight: 700;
+}
+
+.collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.collection_item {
+    display: flex;
+    align-items: center;
+    margin: 2em 0;
+    flex-direction: row;
+    width: 100%;
+    gap: 1.5em;
+}
+
+.image_container {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    max-width: 40%;
+}
+
+.collection_item_image {
+    max-width: 100%;
+    height: auto;
+    max-height: 20em;
+    object-fit: contain;
+}
+
+.collection_item_description {
+    border-radius: 0.5em;
+    width: 60%;
+    background-color: #dfdfdf;
+    padding: 2em 3em;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.price_guitars, .title_element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.guitar_actions {
+    display: flex;
+    gap: 0.8em;
+    flex-wrap: wrap;
+}
+
+.button_outline {
+    background-color: transparent;
+    border: 2px solid #F2A60C;
+    color: #333;
+}
+.button_outline:hover {
+    background-color: #F2A60C;
+    color: #fff;
+}
+
+.guitar_description {
+    font-size: 1.3em;
+}
+
+.title_element h2 {
+    font-weight: 600;
+}
+
+.title_element img {
+    width: 2em;
+}
+
+.button_guitars {
+    display: inline-block;
+    border: none;
+    background-color: #F2A60C;
+    padding: 0.7em 2em;
+    font-weight: 600;
+    transition: 0.3s;
+    border-radius: 1em;
+    margin-top: 1em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button_guitars:hover {
+    border-radius: 2em;
+    background-color: #f2a50cec;
+    color: aliceblue;
+}
+
+@media (max-width: 1200px) {
+    .guitars_page {
+        margin: 2em 4%;
+    }
+    
+    .collection_item {
+        flex-direction: column;
+    }
+
+    .image_container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .collection_item_description {
+        width: 90%;
+    }
+
+    .collection_item_image {
+        max-width: 100%;
+        max-height: 24em;
+    }
+}
+
+@media (max-width: 800px) {
+    .guitars_page {
+        margin: 2em 4%;
+    }
+    
+    .collection_item {
+        flex-direction: column;
+    }
+
+    .collection_item_image{
+        max-width: 100%;
+        max-height: 18em;
+    }
+
+    .collection_item_description {
+        width: 100%;
+        padding: 1.2em;
+    }
+
+    .guitar_collection {
+        font-size: 1.2em;
+    }
+    
+    .guitar_description {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .guitars_page {
+        margin: 1em 4%;
+    }
+    
+    .guitar_collection {
+        font-size: 1em;
+    }
+    
+    .caption_guitars {
+        font-size: 1.5em;
+    }
+
+    .guitar_description {
+        font-size: 1em;
+    }
+
+    .button_guitars {
+        padding: 0.5em 1em;
+    }
+}
